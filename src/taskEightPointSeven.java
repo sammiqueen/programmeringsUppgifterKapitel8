@@ -11,3 +11,5 @@ public class taskEightPointSeven {
         return datum.substring(8, 15);
     }
 }
+
+//uppgift 8.7
