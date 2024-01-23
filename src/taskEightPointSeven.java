@@ -1,5 +1,5 @@
-import java.time.LocalTime;
-import java.time.format.DateTimeFormatter;
+import java.util.Calendar;
+import java.util.Locale;
 
 public class taskEightPointSeven {
     public static void main(String[] args) {
@@ -7,7 +7,7 @@ public class taskEightPointSeven {
     }
 
     public static String klockan(){
-        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("HH:mm:ss");
-        return LocalTime.now().toString();
+        String datum = Calendar.getInstance(Locale.FRANCE).getTime().toString();
+        return datum.substring(8, 15);
     }
 }
